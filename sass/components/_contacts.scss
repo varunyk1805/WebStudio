@@ -1,0 +1,36 @@
+.contacts {
+  @include font(500, 14px, 1.14, 0.02em);
+
+  &__list {
+    @include flex(null, null, null, center);
+
+    @extend %noListStyle;
+    @include margin(null, null, null, -50px);
+  }
+
+  &__item {
+    @include margin(null, null, null, 50px);
+  }
+
+  &__link {
+    @include flex(null, null, null, center);
+    @include padding(32px, null, 32px, null);
+
+    color: getColor('primary');
+    text-decoration: none;
+
+    @include transition(color, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+
+    &:hover,
+    &:focus {
+      color: getColor('accent');
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+    &--start {
+      @include margin(null, 10px, null, null);
+    }
+  }
+}

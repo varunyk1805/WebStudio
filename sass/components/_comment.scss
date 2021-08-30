@@ -1,0 +1,36 @@
+.comment {
+  width: 100%;
+
+  &__label {
+    @extend %block;
+    @include margin(null, null, 20px, null);
+    @include font(400, 12px, 1.17, 00.01em);
+
+    color: getColor('primary');
+
+    @extend %pointerCursor;
+  }
+
+  &__text {
+    @extend %block;
+    @include margin(4px, null, null, null);
+
+    @extend %style--comment__text;
+
+    @include padding(12px, 16px, 12px, 16px);
+
+    @include transition(border, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+
+    @extend %pointerCursor;
+
+    &:focus {
+      border-color: getColor('accent');
+    }
+
+    &::placeholder {
+      @include font(400, 12px, 1.17, 00.01em);
+
+      color: rgba(117, 117, 117, 0.5);
+    }
+  }
+}

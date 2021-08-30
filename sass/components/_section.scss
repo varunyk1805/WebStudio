@@ -1,0 +1,42 @@
+.section {
+  @include padding(94px, null, 94px, null);
+
+  &--hero {
+    max-width: 1600px;
+    height: 600px;
+    @include margin(null, auto, null, auto);
+    @include padding(200px, null, 200px, null);
+
+    @extend %background--hero;
+  }
+
+  &--services {
+    @include padding(0, null, null, null);
+  }
+
+  &--team {
+    background-color: getColor('background');
+  }
+
+  &__title {
+    @include margin(null, null, 50px, null);
+    @include font(null, 36px, 1.17, 0.03em);
+
+    @extend %centerText;
+
+    color: getColor('text');
+
+    &--hero {
+      @include margin(null, null, 30px, null);
+      @include font(900, 44px, 1.36, 0.06em);
+
+      color: getColor('secondary');
+
+      @extend %uppercaseText;
+    }
+
+    &--visually-hidden {
+      @extend %visually-hidden;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.joining {
+  color: getColor('secondary');
+  @include font(700, 14px, 1.14, 0.03em);
+
+  &__title {
+    @include margin(null, null, 20px, null);
+
+    @extend %uppercaseText;
+  }
+}

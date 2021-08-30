@@ -1,0 +1,18 @@
+.header {
+  border-bottom: 1px solid getColor('border--header');
+  &__container {
+    @include flex(null, null, null, center);
+  }
+
+  &__logo {
+    @include padding(25px, null, 25px, null);
+  }
+
+  &__nav {
+    @include margin(null, null, null, 93px);
+  }
+
+  &__contacts {
+    @include margin(null, null, null, auto);
+  }
+}

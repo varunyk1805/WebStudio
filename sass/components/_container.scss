@@ -1,0 +1,9 @@
+.container {
+  width: 1200px;
+  @include margin(null, auto, null, auto);
+  @include padding(null, 15px, null, 15px);
+
+  &--hero {
+    @include flex(column, null, center, center);
+  }
+}

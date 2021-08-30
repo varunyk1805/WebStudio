@@ -1,0 +1,36 @@
+.subscription {
+  color: getColor('secondary');
+  @include font(700, 14px, 1.14, 00.03em);
+
+  &__form {
+    @include flex(null, null, null, flex-end);
+  }
+
+  &__label {
+    @include flex(column, null, null, null);
+    @include margin(null, 12px, null, null);
+
+    @extend %uppercaseText;
+  }
+
+  &__input {
+    @include flex(null, null, null, center);
+    @include margin(20px, null, null, null);
+
+    @extend %style--subscription__input;
+
+    @include padding(null, null, null, 16px);
+    @include font(null, 16px, 1.25, 00.03em);
+
+    color: getColor('secondary');
+    @include transition(border, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+
+    &:focus {
+      border-color: getColor('secondary');
+    }
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+}

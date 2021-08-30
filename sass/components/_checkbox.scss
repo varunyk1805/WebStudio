@@ -1,0 +1,55 @@
+.checkbox {
+  width: 100%;
+
+  &__label {
+    @include position(relative, null, null, null, null);
+    @extend %block;
+    @include margin(null, null, 30px, null);
+    @include padding(null, null, null, 37px);
+    @include font(400, 14px, 1.71, 00.03em);
+
+    color: getColor('primary');
+  }
+
+  &__input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  &__policy {
+    color: getColor('accent');
+  }
+
+  &__icon--off-checked {
+    @include position(absolute, 50%, null, null, 14px);
+
+    transform: translateY(-50%);
+    opacity: 1;
+    fill: getColor('text');
+
+    @include transition(fill, opacity, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+  }
+
+  &__input:focus ~ &__icon--off-checked {
+    fill: getColor('accent');
+  }
+
+  &__input:checked ~ &__icon--off-checked {
+    opacity: 0;
+  }
+
+  &__icon--on-checked {
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+    opacity: 0;
+
+    @include transition(opacity, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+  }
+
+  &__input:checked ~ &__icon--on-checked {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,21 @@
+.grid {
+  @extend %noListStyle;
+  @include flex(null, wrap, center, null);
+  @include margin(-30px, null, null, -30px);
+
+  &__item {
+    @include margin(30px, null, null, 30px);
+
+    &--col-3 {
+      @include sizeGrid(3, 30px);
+    }
+
+    &--col-4 {
+      @include sizeGrid(4, 30px);
+    }
+
+    &--col-6 {
+      @include sizeGrid(6, 30px);
+    }
+  }
+}

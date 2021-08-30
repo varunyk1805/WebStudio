@@ -1,0 +1,20 @@
+.customers {
+  &__link {
+    @include flex(null, null, center, center);
+
+    @extend %style--customers__link;
+
+    color: getColor('icon-link');
+    @include transition(border-color, color, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+
+    &:hover,
+    &:focus {
+      border-color: getColor('accent');
+      color: getColor('accent');
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}

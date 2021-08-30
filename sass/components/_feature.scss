@@ -1,0 +1,25 @@
+.feature {
+  &__icon-box {
+    @include flex(null, null, center, center);
+    @include margin(null, null, 30px, null);
+
+    @extend %style--feature__icon-box;
+
+    background-color: getColor('background');
+  }
+
+  &__title {
+    @include margin(null, null, 10px, null);
+    @include font(null, 14px, 1.14, 00.03em);
+
+    font-style: normal;
+    @extend %uppercaseText;
+
+    color: getColor('text');
+  }
+
+  &__desc {
+    color: getColor('primary');
+    @include font(null, 14px, 1.71, 00.03em);
+  }
+}

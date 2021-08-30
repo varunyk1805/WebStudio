@@ -1,0 +1,49 @@
+.btn {
+  @include flex(null, null, center, center);
+
+  @include font(700, 16px, 1.87, 00.06em);
+
+  color: getColor('secondary');
+  background-color: getColor('accent');
+
+  @extend %style--btn;
+
+  @include transition(background-color, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+
+  @extend %pointerCursor;
+
+  &:hover,
+  &:focus {
+    background-color: getColor('accent--btn');
+  }
+
+  &__icon {
+    fill: currentColor;
+
+    &--end {
+      @include margin(null, null, null, 10px);
+
+      margin-left: 10px;
+    }
+  }
+
+  &-close {
+    background: getColor('secondary');
+    color: getColor('logo');
+
+    @extend %style--btn-close;
+
+    @extend %pointerCursor;
+
+    @include transition(color, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+
+    &:hover,
+    &:focus {
+      color: getColor('accent');
+    }
+
+    &__icon {
+      fill: currentColor;
+    }
+  }
+}

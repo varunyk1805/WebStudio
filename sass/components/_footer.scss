@@ -1,0 +1,24 @@
+.footer {
+  @include padding(60px, null, 60px, null);
+
+  background-color: getColor('background--footer');
+
+  &__container {
+    @include flex(null, null, null, baseline);
+  }
+
+  &__logo {
+    @extend %inlineBlock;
+    @include margin(null, null, 20px, null);
+
+    color: getColor('secondary');
+  }
+
+  &__joining {
+    @include margin(null, null, null, 70px);
+  }
+
+  &__subscription {
+    @include margin(null, null, null, auto);
+  }
+}
