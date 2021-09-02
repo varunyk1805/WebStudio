@@ -1,17 +1,37 @@
 .section {
-  @include padding(94px, null, 94px, null);
+  @include padding(60px, null, 60px, null);
+
+  @media screen and (min-width: 1200px) {
+    @include padding(94px, null, 94px, null);
+  }
 
   &--hero {
-    max-width: 1600px;
-    height: 600px;
-    @include margin(null, auto, null, auto);
-    @include padding(200px, null, 200px, null);
+    max-width: 768px;
+    height: 400px;
+
+    @include flex(null, null, center, center);
 
     @extend %background--hero;
+
+    @include margin(null, auto, null, auto);
+
+    @media screen and (min-width: 768px) {
+      max-width: 1200px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 1600px;
+      height: 600px;
+    }
   }
 
   &--services {
-    @include padding(0, null, null, null);
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+      @include padding(0, null, null, null);
+    }
   }
 
   &--team {
@@ -19,20 +39,31 @@
   }
 
   &__title {
-    @include margin(null, null, 50px, null);
-    @include font(null, 36px, 1.17, 0.03em);
+    @include margin(null, null, 30px, null);
 
-    @extend %centerText;
+    @include font(null, 28px, 1.18, 0.03em);
+
+    text-align: center;
 
     color: getColor('text');
 
+    @media screen and (min-width: 1200px) {
+      @include margin(null, null, 50px, null);
+      @include font(null, 36px, 1.17, 0.03em);
+    }
+
     &--hero {
       @include margin(null, null, 30px, null);
-      @include font(900, 44px, 1.36, 0.06em);
+
+      @include font(900, 26px, 1.62, 0.06em);
 
       color: getColor('secondary');
 
-      @extend %uppercaseText;
+      text-transform: uppercase;
+
+      @media screen and (min-width: 1200px) {
+        @include font(900, 44px, 1.36, 0.06em);
+      }
     }
 
     &--visually-hidden {

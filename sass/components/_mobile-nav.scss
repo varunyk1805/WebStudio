@@ -1,0 +1,28 @@
+.mobile-nav {
+  &__list {
+    @include margin(-32px, null, -32px, null);
+
+    list-style: none;
+  }
+
+  &__item {
+    @include margin(32px, null, 32px, null);
+  }
+
+  &__link {
+    text-decoration: none;
+
+    @include font(500, 40px, 1.18, 00.02em);
+
+    color: getColor('text');
+
+    &--current {
+      color: getColor('accent');
+    }
+
+    &:hover,
+    &:focus {
+      color: getColor('accent');
+    }
+  }
+}

@@ -2,19 +2,22 @@
   @include font(500, 14px, 1.14, 0.02em);
 
   &__list {
+    display: block;
     height: 100%;
+    @include margin(null, -50px, null, null);
+
+    list-style: none;
     @include flex(null, null, null, null);
-    @extend %noListStyle;
-    @include margin(null, null, null, -50px);
   }
 
   &__item {
+    @include margin(null, 50px, null, null);
+
     @include position(relative, null, null, null, null);
-    @include margin(null, null, null, 50px);
   }
 
   &__link {
-    @extend %inlineBlock;
+    display: inline-block;
     @include padding(32px, null, 32px, null);
 
     text-decoration: none;
@@ -33,7 +36,7 @@
 
       &::before {
         content: '';
-        @include position(absolute, null, null, -2px, 0);
+        @include position(absolute, null, null, -1px, 0);
         @extend %style--currentLink;
       }
     }

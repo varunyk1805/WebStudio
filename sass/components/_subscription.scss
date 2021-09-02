@@ -2,28 +2,57 @@
   color: getColor('secondary');
   @include font(700, 14px, 1.14, 00.03em);
 
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+
   &__form {
-    @include flex(null, null, null, flex-end);
+    @include flex(column, null, null, center);
+
+    @media screen and (min-width: 1200px) {
+      @include flex(row, null, null, flex-end);
+    }
   }
 
   &__label {
-    @include flex(column, null, null, null);
-    @include margin(null, 12px, null, null);
+    text-transform: uppercase;
 
-    @extend %uppercaseText;
+    @include flex(column, null, null, null);
+
+    @media screen and (min-width: 1200px) {
+      @include margin(null, 12px, null, null);
+    }
   }
 
   &__input {
-    @include flex(null, null, null, center);
-    @include margin(20px, null, null, null);
-
-    @extend %style--subscription__input;
-
+    @include margin(20px, null, 20px, null);
     @include padding(null, null, null, 16px);
+
+    width: 290px;
+    height: 50px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: transparent;
+    outline: none;
+
     @include font(null, 16px, 1.25, 00.03em);
 
     color: getColor('secondary');
     @include transition(border, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      @include flex(null, null, null, center);
+      @include margin(20px, null, 0, null);
+
+      width: 358px;
+    }
 
     &:focus {
       border-color: getColor('secondary');

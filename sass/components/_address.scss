@@ -1,15 +1,29 @@
 .address {
   color: getColor('secondary');
-  font-style: normal;
   @include font(400, 14px, 1.71, 0.03em);
+  font-style: normal;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 
   &__list {
-    @extend %noListStyle;
-    @include margin(null, null, -9px, null);
+    @include margin(null, null, -8px, null);
+
+    list-style: none;
+
+    @media screen and (min-width: 1200px) {
+      @include margin(null, null, -9px, null);
+    }
   }
 
   &__item {
-    @include margin(null, null, 9px, null);
+    @include margin(null, null, 8px, null);
+
+    @media screen and (min-width: 1200px) {
+      @include margin(null, null, 9px, null);
+    }
   }
 
   &__link {

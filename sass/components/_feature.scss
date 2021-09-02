@@ -1,25 +1,45 @@
 .feature {
   &__icon-box {
-    @include flex(null, null, center, center);
+    @include flex(null, wrap, center, center);
     @include margin(null, null, 30px, null);
 
-    @extend %style--feature__icon-box;
+    width: 290px;
+    height: 120px;
+    border-radius: 4px;
 
     background-color: getColor('background');
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 
   &__title {
     @include margin(null, null, 10px, null);
-    @include font(null, 14px, 1.14, 00.03em);
 
+    @include font(null, 14px, 1.14, 00.03em);
+    text-align: center;
     font-style: normal;
-    @extend %uppercaseText;
+    text-transform: uppercase;
 
     color: getColor('text');
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
   }
 
   &__desc {
     color: getColor('primary');
+
     @include font(null, 14px, 1.71, 00.03em);
   }
 }

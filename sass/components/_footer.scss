@@ -4,21 +4,47 @@
   background-color: getColor('background--footer');
 
   &__container {
-    @include flex(null, null, null, baseline);
+    @include flex(column, null, null, center);
+
+    @media screen and (min-width: 768px) {
+      @include flex(row, wrap, space-around, baseline);
+    }
   }
 
   &__logo {
-    @extend %inlineBlock;
+    text-align: center;
     @include margin(null, null, 20px, null);
 
     color: getColor('secondary');
+
+    @media screen and (min-width: 1200px) {
+      display: inline-block;
+    }
+  }
+
+  &__address {
+    @include margin(null, auto, 60px, null);
+
+    @media screen and (min-width: 1200px) {
+      @include margin(null, 0, 0, null);
+    }
   }
 
   &__joining {
-    @include margin(null, null, null, 70px);
+    @include margin(null, null, 60px, null);
+
+    @media screen and (min-width: 1200px) {
+      @include margin(null, null, null, 70px);
+    }
+
+    @media screen and (min-width: 1200px) {
+      @include margin(null, null, 0, null);
+    }
   }
 
   &__subscription {
-    @include margin(null, null, null, auto);
+    @media screen and (min-width: 1200px) {
+      @include margin(null, null, null, auto);
+    }
   }
 }

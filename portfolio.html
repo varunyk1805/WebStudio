@@ -17,38 +17,43 @@
 
 <body class="page">
 <!-- Шапка -->
-    <header class="header">
-        <div class="container header__container">
-            <a class="logo header__logo" href="./index.html"><span class="logo__web">Web</span>Studio</a>
-            <nav class="nav header__nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link" href="./index.html">Студия</a></li>
-                    <li class="nav__item"><a class="nav__link nav__link--current" href="./portfolio.html">Портфолио</a></li>
-                    <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
-                </ul>
-            </nav>
-            <div class="contacts header__contacts">
-                <ul class="contacts__list">
-                    <li class="contacts__item">
-                        <a class="contacts__link" href="mailto:info@devstudio.com">
-                            <svg class="contacts__icon contacts__icon--start" width="16" height="12">
-                                <use href="./images/icons.svg#envelope"></use>
-                            </svg>
-                            info@devstudio.com
-                        </a>
-                    </li>
-                    <li class="contacts__item">
-                        <a class="contacts__link" href="tel:+380961111111">
-                            <svg class="contacts__icon contacts__icon--start" width="10" height="16">
-                                <use href="./images/icons.svg#smartphone"></use>
-                            </svg>
-                            +38 096 111 11 11
-                        </a>
-                    </li>
-                </ul>
-            </div>
+<header class="header">
+    <div class="container header__container">
+        <a class="logo header__logo" href="./index.html"><span class="logo__web">Web</span>Studio</a>
+        <button class="menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu" type="button">
+            <svg class="menu-btn__icon" width="24" height="16">
+                <use href="./images/icons.svg#menu"></use>
+            </svg>
+        </button>
+        <nav class="nav header__nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="./index.html">Студия</a></li>
+                <li class="nav__item"><a class="nav__link  nav__link--current" href="./portfolio.html">Портфолио</a></li>
+                <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="contacts header__contacts">
+            <ul class="contacts__list">
+                <li class="contacts__item">
+                    <a class="contacts__link contacts__link" href="mailto:info@devstudio.com">
+                        <svg class="contacts__icon contacts__icon--start" width="16" height="12">
+                            <use href="./images/icons.svg#envelope"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                </li>
+                <li class="contacts__item">
+                    <a class="contacts__link contacts__link" href="tel:+380961111111">
+                        <svg class="contacts__icon contacts__icon--start" width="10" height="16">
+                            <use href="./images/icons.svg#smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
         </div>
-    </header>
+    </div>
+</header>
 <!-- Основная часть -->
     <main>
         <section class="section">
@@ -87,7 +92,7 @@
                 </form> -->
             <!-- Примеры работ -->
                 <ul class="grid">
-                    <li class="grid__item grid__item--col-3">
+                    <li class="grid__item grid__item--projects-card">
                         <div class="projects-card">
                             <a class="projects-card__link" href="">
                                 <div class="projects-card__overflow">
@@ -103,7 +108,7 @@
                             </a>
                         </div>
                     </li>
-                    <li class="grid__item grid__item--col-3">
+                    <li class="grid__item grid__item--projects-card">
                         <div class="projects-card">
                             <a class="projects-card__link" href="">
                                 <div class="projects-card__overflow">
@@ -120,7 +125,7 @@
                             </a>
                         </div>
                     </li>
-                    <li class="grid__item grid__item--col-3">
+                    <li class="grid__item grid__item--projects-card">
                         <div class="projects-card">
                             <a class="projects-card__link" href="">
                                 <div class="projects-card__overflow">
@@ -136,7 +141,7 @@
                             </a>
                         </div>
                     </li>
-                    <li class="grid__item grid__item--col-3">
+                    <li class="grid__item grid__item--projects-card">
                         <div class="projects-card">
                             <a class="projects-card__link" href="">
                                 <div class="projects-card__overflow">
@@ -152,7 +157,7 @@
                             </a>
                         </div>
                     </li>
-                    <li class="grid__item grid__item--col-3">
+                    <li class="grid__item grid__item--projects-card">
                         <div class="projects-card">
                             <a class="projects-card__link" href="">
                                 <div class="projects-card__overflow">
@@ -168,7 +173,7 @@
                             </a>
                         </div>
                     </li>
-                    <li class="grid__item grid__item--col-3">
+                    <li class="grid__item grid__item--projects-card">
                         <div class="projects-card">
                             <a class="projects-card__link" href="">
                                 <div class="projects-card__overflow">
@@ -184,7 +189,7 @@
                             </a>
                         </div>
                     </li>
-                    <li class="grid__item grid__item--col-3">
+                    <li class="grid__item grid__item--projects-card">
                         <div class="projects-card">
                             <a class="projects-card__link" href="">
                                 <div class="projects-card__overflow">
@@ -200,7 +205,7 @@
                             </a>
                         </div>
                     </li>
-                    <li class="grid__item grid__item--col-3">
+                    <li class="grid__item grid__item--projects-card">
                         <div class="projects-card">
                             <a class="projects-card__link" href="">
                                 <div class="projects-card__overflow">
@@ -216,7 +221,7 @@
                             </a>
                         </div>
                     </li>
-                    <li class="grid__item grid__item--col-3">
+                    <li class="grid__item grid__item--projects-card">
                         <div class="projects-card">
                             <a class="projects-card__link" href="">
                                 <div class="projects-card__overflow">
@@ -241,7 +246,7 @@
         <div class="container footer__container">
             <div>
                 <a class="logo footer__logo" href="./index.html"><span class="logo__web">Web</span>Studio</a>
-                <address class="address">
+                <address class="address footer__address">
                     <ul class="address__list">
                         <li class="address__item">г. Киев, пр-т Леси Украинки, 26</li>
                         <li class="address__item"><a class="address__link"
@@ -300,5 +305,58 @@
             </div>
         </div>
     </footer>
+<!-- Мобильное меню -->
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <div class="mobile-menu__container">
+            <button class="menu-btn menu-btn--close js-close-menu" type="button">
+                <svg class="menu-btn__icon" width="19" height="19">
+                    <use href="./images/icons.svg#menu-close"></use>
+                </svg>
+            </button>
+            <nav class="mobile-nav mobile-menu__mobile-nav">
+                <ul class="mobile-nav__list">
+                    <li class="mobile-nav__item"><a class="mobile-nav__link"
+                            href="./index.html">Студия</a></li>
+                    <li class="mobile-nav__item"><a class="mobile-nav__link mobile-nav__link--current" href="./portfolio.html">Портфолио</a></li>
+                    <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-contacts mobile-menu__mobile-contacts">
+                <ul class="mobile-contacts__list">
+                    <li class="mobile-contacts__item">
+                        <a class="mobile-contacts__link mobile-contacts__link--accent" href="tel:+380961111111">
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                    <li class="mobile-contacts__item">
+                        <a class="mobile-contacts__link mobile-contacts__link" href="mailto:info@devstudio.com">
+                            info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mobile-socials mobile-menu__mobile-socials">
+                <ul class="mobile-socials__list">
+                    <li class="mobile-socials__item">
+                        <a class="mobile-socials__link" href="">Instgram</a>
+                    </li>
+                    <li class="mobile-socials__item">
+                        <a class="mobile-socials__link" href="">Twitter</a>
+                    </li>
+                    <li class="mobile-socials__item">
+                        <a class="mobile-socials__link" href="">Facebook</a>
+                    </li>
+                    <li class="mobile-socials__item">
+                        <a class="mobile-socials__link" href="">Linkedin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
 </body>
 </html>

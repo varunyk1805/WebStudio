@@ -1,16 +1,21 @@
 .btn {
   @include flex(null, null, center, center);
 
+  width: 200px;
+  height: 50px;
+
   @include font(700, 16px, 1.87, 00.06em);
 
   color: getColor('secondary');
   background-color: getColor('accent');
 
-  @extend %style--btn;
+  border-color: transparent;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   @include transition(background-color, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
 
-  @extend %pointerCursor;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -22,18 +27,20 @@
 
     &--end {
       @include margin(null, null, null, 10px);
-
-      margin-left: 10px;
     }
   }
 
   &-close {
+    width: 30px;
+    height: 30px;
+
     background: getColor('secondary');
     color: getColor('logo');
 
-    @extend %style--btn-close;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
 
-    @extend %pointerCursor;
+    cursor: pointer;
 
     @include transition(color, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
 

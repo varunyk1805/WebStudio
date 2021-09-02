@@ -1,14 +1,30 @@
 .filter {
-  @include flex(null, null, center, null);
-  @include margin(null, null, 50px, null);
+  @include flex(null, wrap, flex-start, null);
+
+  @include margin(-15px, -4px, 40px, -4px);
+
   list-style: none;
 
-  &__item:not(:first-child) {
-    @include margin(null, null, null, 8px);
+  @media screen and (min-width: 768px) {
+    @include margin(0, null, 30px, null);
+
+    @include flex(null, null, center, null);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include margin(null, null, 50px, null);
+  }
+
+  &__item {
+    @include margin(15px, 4px, null, 4px);
+
+    @media screen and (min-width: 768px) {
+      @include margin(0, null, null, null);
+    }
   }
 
   &__btn {
-    @include padding(4px, 20px, 4px, 20px);
+    @include padding(6px, 22px, 6px, 22px);
 
     border-radius: 4px;
     border-color: transparent;

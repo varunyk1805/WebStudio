@@ -1,0 +1,31 @@
+.mobile-socials {
+  @include margin(64px, null, null, null);
+
+  &__list {
+    display: flex;
+
+    @include margin(null, null, null, -10px);
+
+    list-style: none;
+  }
+
+  &__item {
+    @include margin(null, null, null, 10px);
+    @include padding(null, 10px, null, null);
+
+    &:not(:last-child) {
+      border-right: 1px solid black;
+    }
+  }
+  &__link {
+    text-decoration: none;
+
+    @include font(500, 12px, 1.22, 00.02em);
+
+    color: getColor('accent');
+
+    @media screen and (min-width: 480px) {
+      @include font(null, 18px, null, null);
+    }
+  }
+}

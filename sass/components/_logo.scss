@@ -1,12 +1,17 @@
 .logo {
+  display: block;
   font-family: $logo-font;
   font-style: normal;
 
-  @include font(700, 26px, 1.19, 00.03em);
+  @include font(700, 24px, 1.17, 00.03em);
 
   color: getColor('logo');
 
   text-decoration: none;
+
+  @media screen and (min-width: 1200px) {
+    @include font(null, 26px, 1.19, null);
+  }
 
   &__web {
     color: getColor('accent');

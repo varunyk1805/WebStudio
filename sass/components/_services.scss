@@ -2,7 +2,9 @@
   @include position(relative, null, null, null, null);
 
   &__image {
-    @extend %image-block;
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
 
   &__title {
@@ -15,6 +17,6 @@
     background: getColor('background--services');
     @include font(700, 14px, 1.14, 00.03em);
 
-    @extend %uppercaseText;
+    text-transform: uppercase;
   }
 }

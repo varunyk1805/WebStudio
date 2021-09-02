@@ -1,18 +1,48 @@
 .header {
   border-bottom: 1px solid getColor('border--header');
+
   &__container {
+    position: relative;
+    height: 60px;
+
     @include flex(null, null, null, center);
+
+    @media screen and (min-width: 768px) {
+      height: 80px;
+    }
   }
 
   &__logo {
-    @include padding(25px, null, 25px, null);
+    @include padding(16px, null, 16px, null);
+
+    @media screen and (min-width: 768px) {
+      @include padding(26px, null, 26px, null);
+    }
+
+    @media screen and (min-width: 1200px) {
+      @include padding(25px, null, 25px, null);
+    }
   }
 
   &__nav {
-    @include margin(null, null, null, 93px);
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      @include margin(null, null, null, 88px);
+    }
+
+    @media screen and (min-width: 1200px) {
+      @include margin(null, null, null, 93px);
+    }
   }
 
   &__contacts {
-    @include margin(null, null, null, auto);
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      @include margin(null, null, null, auto);
+    }
   }
 }

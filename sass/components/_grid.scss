@@ -1,21 +1,65 @@
 .grid {
-  @extend %noListStyle;
-  @include flex(null, wrap, center, null);
-  @include margin(-30px, null, null, -30px);
+  list-style: none;
+  @include flex(null, wrap, null, null);
+
+  @include margin(-15px, -15px, -15px, -15px);
 
   &__item {
-    @include margin(30px, null, null, 30px);
+    @include margin(15px, 15px, 15px, 15px);
 
-    &--col-3 {
-      @include sizeGrid(3, 30px);
+    &--features {
+      @include sizeGrid(1, 15px);
+
+      @media screen and (min-width: 768px) {
+        @include sizeGrid(2, 15px);
+      }
+
+      @media screen and (min-width: 1200px) {
+        @include sizeGrid(4, 15px);
+      }
     }
 
-    &--col-4 {
-      @include sizeGrid(4, 30px);
+    &--services {
+      @include sizeGrid(3, 15px);
     }
 
-    &--col-6 {
-      @include sizeGrid(6, 30px);
+    &--team {
+      @include sizeGrid(1, 15px);
+
+      @media screen and (min-width: 768px) {
+        @include sizeGrid(2, 15px);
+      }
+
+      @media screen and (min-width: 1200px) {
+        @include sizeGrid(4, 15px);
+      }
+    }
+
+    &--customers {
+      @include sizeGrid(1, 15px);
+
+      @media screen and (min-width: 480px) {
+        @include sizeGrid(2, 15px);
+      }
+      @media screen and (min-width: 768px) {
+        @include sizeGrid(3, 15px);
+      }
+
+      @media screen and (min-width: 1200px) {
+        @include sizeGrid(6, 15px);
+      }
+    }
+
+    &--projects-card {
+      @include sizeGrid(1, 15px);
+
+      @media screen and (min-width: 768px) {
+        @include sizeGrid(2, 15px);
+      }
+
+      @media screen and (min-width: 1200px) {
+        @include sizeGrid(3, 15px);
+      }
     }
   }
 }

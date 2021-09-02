@@ -1,10 +1,15 @@
 .joining {
   color: getColor('secondary');
   @include font(700, 14px, 1.14, 0.03em);
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 
   &__title {
     @include margin(null, null, 20px, null);
 
-    @extend %uppercaseText;
+    text-transform: uppercase;
   }
 }

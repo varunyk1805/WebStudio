@@ -36,7 +36,7 @@
 }
 
 @mixin sizeGrid($number, $margin) {
-  flex-basis: calc(100% / #{$number} - #{$margin});
+  flex-basis: calc(100% / #{$number} - 2 * #{$margin});
 }
 
 @mixin transition($one, $two, $three, $duration, $function) {
