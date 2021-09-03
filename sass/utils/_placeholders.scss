@@ -6,14 +6,6 @@
   margin: -1px;
 }
 
-// %background--hero {
-//   background-color: getColor('background--hero');
-//   background-image: linear-gradient(getColor('gradient--hero'), getColor('gradient--hero')),
-//     url(../images/index/Img8.jpg);
-//   background-repeat: no-repeat;
-//   background-size: cover;
-// }
-
 %style--currentLink {
   display: block;
   width: 100%;
@@ -27,20 +19,20 @@
   background-size: cover;
 
   background-image: linear-gradient(getColor('gradient--hero'), getColor('gradient--hero')),
-    url(../../images/hero-portrait.jpg);
+    url(./../images/hero-portrait.jpg);
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: linear-gradient(getColor('gradient--hero'), getColor('gradient--hero')),
-      url(../../images/hero-portrait@2x.jpg);
+      url(./../images/hero-portrait@2x.jpg);
   }
 
   @media screen and (min-width: 480px) {
     background-image: linear-gradient(getColor('gradient--hero'), getColor('gradient--hero')),
-      url(../../images/hero-landscape-normal.jpg);
+      url(./../images/hero-landscape-normal.jpg);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(getColor('gradient--hero'), getColor('gradient--hero')),
-        url(../../images/hero-landscape-normal@2x.jpg);
+        url(./../images/hero-landscape-normal@2x.jpg);
     }
   }
 
