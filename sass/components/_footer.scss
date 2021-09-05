@@ -22,29 +22,23 @@
     }
   }
 
-  &__address {
-    @include margin(null, auto, 60px, null);
-
-    @media screen and (min-width: 1200px) {
-      @include margin(null, 0, 0, null);
-    }
-  }
-
   &__joining {
-    @include margin(null, null, 60px, null);
+    @include margin(60px, null, null, null);
+
+    @media screen and (min-width: 768px) {
+      @include margin(0, null, null, null);
+    }
 
     @media screen and (min-width: 1200px) {
       @include margin(null, null, null, 70px);
     }
-
-    @media screen and (min-width: 1200px) {
-      @include margin(null, null, 0, null);
-    }
   }
 
   &__subscription {
+    @include margin(60px, null, null, null);
+
     @media screen and (min-width: 1200px) {
-      @include margin(null, null, null, auto);
+      @include margin(0, null, null, auto);
     }
   }
 }

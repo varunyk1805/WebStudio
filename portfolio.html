@@ -17,43 +17,43 @@
 
 <body class="page">
 <!-- Шапка -->
-<header class="header">
-    <div class="container header__container">
-        <a class="logo header__logo" href="./index.html"><span class="logo__web">Web</span>Studio</a>
-        <button class="menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu" type="button">
-            <svg class="menu-btn__icon" width="24" height="16">
-                <use href="./images/icons.svg#menu"></use>
-            </svg>
-        </button>
-        <nav class="nav header__nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a class="nav__link" href="./index.html">Студия</a></li>
-                <li class="nav__item"><a class="nav__link  nav__link--current" href="./portfolio.html">Портфолио</a></li>
-                <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
-            </ul>
-        </nav>
-        <div class="contacts header__contacts">
-            <ul class="contacts__list">
-                <li class="contacts__item">
-                    <a class="contacts__link contacts__link" href="mailto:info@devstudio.com">
-                        <svg class="contacts__icon contacts__icon--start" width="16" height="12">
-                            <use href="./images/icons.svg#envelope"></use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li class="contacts__item">
-                    <a class="contacts__link contacts__link" href="tel:+380961111111">
-                        <svg class="contacts__icon contacts__icon--start" width="10" height="16">
-                            <use href="./images/icons.svg#smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
+    <header class="header">
+        <div class="container header__container">
+            <a class="logo header__logo" href="./index.html"><span class="logo__web">Web</span>Studio</a>
+            <button class="menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu" type="button">
+                <svg class="menu-btn__icon" width="24" height="16">
+                    <use href="./images/icons.svg#menu"></use>
+                </svg>
+            </button>
+            <nav class="nav header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="./index.html">Студия</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--current" href="./portfolio.html">Портфолио</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="contacts header__contacts">
+                <ul class="contacts__list">
+                    <li class="contacts__item">
+                        <a class="contacts__link contacts__link--up" href="mailto:info@devstudio.com">
+                            <svg class="contacts__icon contacts__icon--start" width="16" height="12">
+                                <use href="./images/icons.svg#envelope"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a class="contacts__link contacts__link--down" href="tel:+380961111111">
+                            <svg class="contacts__icon contacts__icon--start" width="10" height="16">
+                                <use href="./images/icons.svg#smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
 <!-- Основная часть -->
     <main>
         <section class="section">
@@ -83,9 +83,8 @@
                         <div class="projects-card">
                             <a class="projects-card__link" href="">
                                 <div class="projects-card__overflow">
-                                    <picture projects-picture>
+                                    <picture>
                                         <source 
-                                            type="image/webp"
                                             srcset="
                                                 ./images/project1-354.webp 354w,
                                                 ./images/project1-370.webp 370w, 
@@ -94,7 +93,11 @@
                                                 ./images/project1-740.webp 740w,
                                                 ./images/project1-900.webp 900w
                                             "
-                                        />
+                                            type="image/webp"
+                                            sizes="(min-width: 1200px) 33vw,
+                                            (min-width: 768px) 50vw,
+                                            100vw"
+                                        >
                                         <img class="projects-card__image"
                                             srcset="
                                                 ./images/project1-354.jpg 354w,
@@ -109,7 +112,7 @@
                                             sizes="(min-width: 1200px) 33vw,
                                             (min-width: 768px) 50vw,
                                             100vw"
-                                        />
+                                        >
                                     </picture>
                                     <p class="projects-card__text">
                                         Технокряк это современная площадка распространения коронавируса. Компании используют
@@ -129,7 +132,6 @@
                                 <div class="projects-card__overflow">
                                     <picture>
                                         <source 
-                                            type="image/webp" 
                                             srcset="
                                                 ./images/project2-354.webp 354w,
                                                 ./images/project2-370.webp 370w, 
@@ -138,7 +140,11 @@
                                                 ./images/project2-740.webp 740w,
                                                 ./images/project2-900.webp 900w
                                             " 
-                                        />
+                                            type="image/webp"
+                                            sizes="(min-width: 1200px) 33vw,
+                                            (min-width: 768px) 50vw,
+                                            100vw"
+                                        >
                                         <img class="projects-card__image" 
                                             srcset="
                                                 ./images/project2-354.jpg 354w,
@@ -153,7 +159,7 @@
                                             sizes="(min-width: 1200px) 33vw,
                                             (min-width: 768px) 50vw,
                                             100vw"
-                                        />
+                                        >
                                     </picture>
                                     <p class="projects-card__text">
                                         Технокряк это современная площадка распространения коронавируса. Компании используют
@@ -173,7 +179,6 @@
                                 <div class="projects-card__overflow">
                                     <picture>
                                         <source 
-                                            type="image/webp" 
                                             srcset="
                                                 ./images/project3-354.webp 354w,
                                                 ./images/project3-370.webp 370w, 
@@ -182,7 +187,11 @@
                                                 ./images/project3-740.webp 740w,
                                                 ./images/project3-900.webp 900w
                                             " 
-                                        />
+                                            type="image/webp"
+                                            sizes="(min-width: 1200px) 33vw,
+                                            (min-width: 768px) 50vw,
+                                            100vw"
+                                        >
                                         <img class="projects-card__image" 
                                             srcset="
                                                 ./images/project3-354.jpg 354w,
@@ -197,7 +206,7 @@
                                             sizes="(min-width: 1200px) 33vw,
                                             (min-width: 768px) 50vw,
                                             100vw"
-                                        />
+                                        >
                                     </picture>
                                     <p class="projects-card__text">
                                         Технокряк это современная площадка распространения коронавируса. Компании используют
@@ -217,7 +226,6 @@
                                 <div class="projects-card__overflow">
                                     <picture>
                                         <source 
-                                            type="image/webp" 
                                             srcset="
                                                 ./images/project4-354.webp 354w,
                                                 ./images/project4-370.webp 370w, 
@@ -226,7 +234,11 @@
                                                 ./images/project4-740.webp 740w,
                                                 ./images/project4-900.webp 900w
                                             "
-                                        />
+                                            type="image/webp"
+                                            sizes="(min-width: 1200px) 33vw,
+                                            (min-width: 768px) 50vw,
+                                            100vw"
+                                        >
                                         <img class="projects-card__image" 
                                             srcset="
                                                 ./images/project4-354.jpg 354w,
@@ -241,7 +253,7 @@
                                             sizes="(min-width: 1200px) 33vw,
                                             (min-width: 768px) 50vw,
                                             100vw"
-                                        />
+                                        >
                                     </picture>
                                     <p class="projects-card__text">
                                         Технокряк это современная площадка распространения коронавируса. Компании используют
@@ -260,7 +272,7 @@
                             <a class="projects-card__link" href="">
                                 <div class="projects-card__overflow">
                                     <picture>
-                                        <source type="image/webp" 
+                                        <source
                                             srcset="
                                                 ./images/project5-354.webp 354w,
                                                 ./images/project5-370.webp 370w, 
@@ -269,7 +281,11 @@
                                                 ./images/project5-740.webp 740w,
                                                 ./images/project5-900.webp 900w
                                             " 
-                                        />
+                                            type="image/webp" 
+                                            sizes="(min-width: 1200px) 33vw,
+                                            (min-width: 768px) 50vw,
+                                            100vw"
+                                        >
                                         <img class="projects-card__image" 
                                             srcset="
                                                 ./images/project5-354.jpg 354w,
@@ -284,7 +300,7 @@
                                             sizes="(min-width: 1200px) 33vw,
                                             (min-width: 768px) 50vw,
                                             100vw"
-                                        />
+                                        >
                                     </picture>
                                     <p class="projects-card__text">
                                         Технокряк это современная площадка распространения коронавируса. Компании используют
@@ -304,7 +320,6 @@
                                 <div class="projects-card__overflow">
                                     <picture>
                                         <source 
-                                            type="image/webp" 
                                             srcset="
                                                 ./images/project6-354.webp 354w,
                                                 ./images/project6-370.webp 370w, 
@@ -313,7 +328,11 @@
                                                 ./images/project6-740.webp 740w,
                                                 ./images/project6-900.webp 900w
                                             " 
-                                        />
+                                            type="image/webp" 
+                                            sizes="(min-width: 1200px) 33vw,
+                                            (min-width: 768px) 50vw,
+                                            100vw"
+                                        >
                                         <img class="projects-card__image" 
                                             srcset="
                                                 ./images/project6-354.jpg 354w,
@@ -328,7 +347,7 @@
                                             sizes="(min-width: 1200px) 33vw,
                                             (min-width: 768px) 50vw,
                                             100vw"
-                                        />
+                                        >
                                     </picture>
                                     <p class="projects-card__text">
                                         Технокряк это современная площадка распространения коронавируса. Компании используют
@@ -348,8 +367,7 @@
                                 <div class="projects-card__overflow">
                                     <picture>
                                         <source 
-                                            type="image/webp" 
-                                            srcset="
+                                        srcset="
                                                 ./images/project7-354.webp 354w,
                                                 ./images/project7-370.webp 370w, 
                                                 ./images/project7-450.webp 450w,
@@ -357,7 +375,11 @@
                                                 ./images/project7-740.webp 740w,
                                                 ./images/project7-900.webp 900w
                                             " 
-                                        />
+                                            type="image/webp" 
+                                            sizes="(min-width: 1200px) 33vw,
+                                            (min-width: 768px) 50vw,
+                                            100vw"
+                                        >
                                         <img class="projects-card__image" 
                                             srcset="
                                                 ./images/project7-354.jpg 354w,
@@ -372,7 +394,7 @@
                                             sizes="(min-width: 1200px) 33vw,
                                             (min-width: 768px) 50vw,
                                             100vw"
-                                        />
+                                        >
                                     </picture>
                                     <p class="projects-card__text">
                                         Технокряк это современная площадка распространения коронавируса. Компании используют
@@ -392,7 +414,6 @@
                                 <div class="projects-card__overflow">
                                     <picture>
                                         <source 
-                                            type="image/webp" 
                                             srcset="
                                                 ./images/project8-354.webp 354w,
                                                 ./images/project8-370.webp 370w, 
@@ -401,7 +422,11 @@
                                                 ./images/project8-740.webp 740w,
                                                 ./images/project8-900.webp 900w
                                             " 
-                                        />
+                                            type="image/webp" 
+                                            sizes="(min-width: 1200px) 33vw,
+                                            (min-width: 768px) 50vw,
+                                            100vw"
+                                        >
                                         <img class="projects-card__image" 
                                             srcset="
                                                 ./images/project8-354.jpg 354w,
@@ -411,12 +436,12 @@
                                                 ./images/project8-740.jpg 740w,
                                                 ./images/project8-900.jpg 900w
                                             " 
-                                        src="./images/project8-900.jpg" 
-                                        alt="Бирка"
-                                        sizes="(min-width: 1200px) 33vw,
-                                        (min-width: 768px) 50vw,
-                                        100vw"
-                                        />
+                                            src="./images/project8-900.jpg" 
+                                            alt="Бирка"
+                                            sizes="(min-width: 1200px) 33vw,
+                                            (min-width: 768px) 50vw,
+                                            100vw"
+                                        >
                                     </picture>
                                     <p class="projects-card__text">
                                         Технокряк это современная площадка распространения коронавируса. Компании используют
@@ -436,7 +461,6 @@
                                 <div class="projects-card__overflow">
                                     <picture>
                                         <source 
-                                            type="image/webp" 
                                             srcset="
                                                 ./images/project9-354.webp 354w,
                                                 ./images/project9-370.webp 370w, 
@@ -445,7 +469,11 @@
                                                 ./images/project9-740.webp 740w,
                                                 ./images/project9-900.webp 900w
                                             " 
-                                        />
+                                            type="image/webp" 
+                                            sizes="(min-width: 1200px) 33vw,
+                                            (min-width: 768px) 50vw,
+                                            100vw"
+                                        >
                                         <img class="projects-card__image" 
                                             srcset="
                                                 ./images/project9-354.jpg 354w,
@@ -460,7 +488,7 @@
                                             sizes="(min-width: 1200px) 33vw,
                                             (min-width: 768px) 50vw,
                                             100vw"
-                                        />
+                                        >
                                     </picture>
                                     <p class="projects-card__text">
                                         Технокряк это современная площадка распространения коронавируса. Компании используют
@@ -483,7 +511,7 @@
         <div class="container footer__container">
             <div>
                 <a class="logo footer__logo" href="./index.html"><span class="logo__web">Web</span>Studio</a>
-                <address class="address footer__address">
+                <address class="address">
                     <ul class="address__list">
                         <li class="address__item">г. Киев, пр-т Леси Украинки, 26</li>
                         <li class="address__item"><a class="address__link"
@@ -533,7 +561,7 @@
                     <label class="subscription__label">Подпишитесь на рассылку
                         <input class="subscription__input" type="email" name="email" placeholder="E-mail">
                     </label>
-                    <button class="btn" type="submit">Подписаться
+                    <button class="btn subscription__btn" type="submit">Подписаться
                         <svg class="btn__icon btn__icon--end" width="24" height="24">
                             <use href="./images/icons.svg#send"></use>
                         </svg>

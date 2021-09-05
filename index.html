@@ -35,7 +35,7 @@
             <div class="contacts header__contacts">
                 <ul class="contacts__list">
                     <li class="contacts__item">
-                        <a class="contacts__link contacts__link" href="mailto:info@devstudio.com">
+                        <a class="contacts__link contacts__link--up" href="mailto:info@devstudio.com">
                             <svg class="contacts__icon contacts__icon--start" width="16" height="12">
                                 <use href="./images/icons.svg#envelope"></use>
                             </svg>
@@ -43,7 +43,7 @@
                         </a>
                     </li>
                     <li class="contacts__item">
-                        <a class="contacts__link contacts__link" href="tel:+380961111111">
+                        <a class="contacts__link contacts__link--down" href="tel:+380961111111">
                             <svg class="contacts__icon contacts__icon--start" width="10" height="16">
                                 <use href="./images/icons.svg#smartphone"></use>
                             </svg>
@@ -129,6 +129,7 @@
                                         ./images/services1-740.jpg 740w
                                     "
                                     type="image/webp"
+                                    sizes="33vw"
                                 >
                                 <img class="services__image"
                                     srcset="
@@ -151,7 +152,9 @@
                                         ./images/services2-370.jpg 370w,
                                         ./images/services2-740.jpg 740w
                                     " 
-                                    type="image/webp">
+                                    type="image/webp"
+                                    sizes="33vw"
+                                >
                                 <img class="services__image"
                                     srcset="
                                         ./images/services2-370.jpg 370w,
@@ -159,7 +162,8 @@
                                     "
                                     src="./images/services2-740.jpg" 
                                     alt="Телефон" 
-                                    sizes="33vw">
+                                    sizes="33vw"
+                                >
                             </picture>
                             <h3 class="services__title">Мобильные приложения</h3>
                         </div>
@@ -172,7 +176,9 @@
                                         ./images/services3-370.jpg 370w,
                                         ./images/services3-740.jpg 740w
                                     " 
-                                    type="image/webp">
+                                    type="image/webp"
+                                    sizes="33vw"
+                                >
                                 <img class="services__image"
                                     srcset="
                                         ./images/services3-370.jpg 370w,
@@ -180,7 +186,8 @@
                                     " 
                                     src="./images/services3-740.jpg" 
                                     alt="Планшет" 
-                                    sizes="33vw">
+                                    sizes="33vw"
+                                >
                             </picture>
                             <h3 class="services__title">Дизайнерские решения</h3>
                         </div>
@@ -197,7 +204,6 @@
                         <div class="team-card">
                             <picture>
                                 <source 
-                                    type="image/webp"
                                     srcset="
                                         ./images/team1-270.webp 270w,
                                         ./images/team1-354.webp 354w, 
@@ -206,7 +212,11 @@
                                         ./images/team1-708.webp 708w,
                                         ./images/team1-900.webp 900w
                                     "
-                                />
+                                    type="image/webp"
+                                    sizes="(min-width: 1200px) 25vw,
+                                    (min-width: 768px) 50vw,
+                                    100vw"
+                                >
                                 <img class="team-card__image" 
                                     srcset="
                                         ./images/team1-270.jpg 270w,
@@ -221,7 +231,7 @@
                                     sizes="(min-width: 1200px) 25vw,
                                     (min-width: 768px) 50vw,
                                     100vw"
-                                />
+                                >
                             </picture>
                             <div class="team-card__desc">
                                 <h3 class="team-card__name">Игорь Демьяненко</h3>
@@ -265,7 +275,6 @@
                         <div class="team-card">
                             <picture>
                                 <source 
-                                    type="image/webp" 
                                     srcset="
                                         ./images/team2-270.webp 270w,
                                         ./images/team2-354.webp 354w, 
@@ -274,7 +283,11 @@
                                         ./images/team2-708.webp 708w,
                                         ./images/team2-900.webp 900w
                                     " 
-                                />
+                                    type="image/webp" 
+                                    sizes="(min-width: 1200px) 25vw,
+                                    (min-width: 768px) 50vw,
+                                    100vw"
+                                >
                                 <img class="team-card__image"
                                     srcset="
                                         ./images/team2-270.jpg 270w,
@@ -289,7 +302,7 @@
                                     sizes="(min-width: 1200px) 25vw,
                                     (min-width: 768px) 50vw,
                                     100vw"
-                                />
+                                >
                             </picture>
                             <div class="team-card__desc">
                                 <h3 class="team-card__name">Ольга Репина</h3>
@@ -333,7 +346,6 @@
                         <div class="team-card">
                             <picture>
                                 <source 
-                                    type="image/webp"
                                     srcset="
                                         ./images/team3-270.webp 270w,
                                         ./images/team3-354.webp 354w, 
@@ -342,7 +354,11 @@
                                         ./images/team3-708.webp 708w,
                                         ./images/team3-900.webp 900w
                                     " 
-                                />
+                                    type="image/webp"
+                                    sizes="(min-width: 1200px) 25vw,
+                                    (min-width: 768px) 50vw,
+                                    100vw"
+                                >
                                 <img class="team-card__image"
                                     srcset="
                                         ./images/team3-270.jpg 270w,
@@ -357,7 +373,7 @@
                                     sizes="(min-width: 1200px) 25vw,
                                     (min-width: 768px) 50vw,
                                     100vw"
-                                />
+                                >
                             </picture>
                             <div class="team-card__desc">
                                 <h3 class="team-card__name">Николай Тарасов</h3>
@@ -401,7 +417,6 @@
                         <div class="team-card">
                             <picture>
                                 <source 
-                                    type="image/webp" 
                                     srcset="
                                         ./images/team4-270.webp 270w,
                                         ./images/team4-354.webp 354w, 
@@ -410,7 +425,11 @@
                                         ./images/team4-708.webp 708w,
                                         ./images/team4-900.webp 900w
                                     " 
-                                />
+                                    type="image/webp"
+                                    sizes="(min-width: 1200px) 25vw, 
+                                    (min-width: 768px) 50vw, 
+                                    100vw" 
+                                >
                                 <img class="team-card__image" 
                                     srcset="
                                         ./images/team4-270.jpg 270w,
@@ -425,7 +444,7 @@
                                     sizes="(min-width: 1200px) 25vw, 
                                     (min-width: 768px) 50vw, 
                                     100vw"
-                                />
+                                >
                             </picture>
                             <div class="team-card__desc">
                                 <h3 class="team-card__name">Михаил Ермаков</h3>
@@ -536,7 +555,7 @@
         <div class="container footer__container">
             <div>
                 <a class="logo footer__logo" href="./index.html"><span class="logo__web">Web</span>Studio</a>
-                <address class="address footer__address">
+                <address class="address">
                     <ul class="address__list">
                         <li class="address__item">г. Киев, пр-т Леси Украинки, 26</li>
                         <li class="address__item"><a class="address__link" href="mailto:info@example.com">info@example.com</a></li>
@@ -584,7 +603,7 @@
                     <label class="subscription__label">Подпишитесь на рассылку
                         <input class="subscription__input" type="email" name="email" placeholder="E-mail">
                     </label>
-                    <button class="btn" type="submit">Подписаться
+                    <button class="btn subscription__btn" type="submit">Подписаться
                         <svg class="btn__icon btn__icon--end" width="24" height="24">
                             <use href="./images/icons.svg#send"></use>
                         </svg>

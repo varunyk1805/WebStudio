@@ -7,7 +7,6 @@
 
   &__list {
     @include flex(column, null, center, flex-start);
-    @include margin(null, null, -10px, null);
 
     list-style: none;
 
@@ -18,10 +17,18 @@
   }
 
   &__item {
-    @include margin(null, null, 10px, null);
+    width: 100%;
 
     @media screen and (min-width: 1200px) {
       @include margin(null, null, null, 50px);
+    }
+
+    &:first-child {
+      @include margin(null, null, 10px, null);
+
+      @media screen and (min-width: 1200px) {
+        @include margin(null, null, 0, 0);
+      }
     }
   }
 
@@ -40,6 +47,18 @@
     &:hover,
     &:focus {
       color: getColor('accent');
+    }
+
+    &--up {
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        @include padding(21px, 0, 0, 0);
+      }
+    }
+
+    &--down {
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        @include padding(0, 0, 21px, 0);
+      }
     }
   }
 
